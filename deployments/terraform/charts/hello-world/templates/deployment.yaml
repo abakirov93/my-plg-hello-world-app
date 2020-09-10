@@ -22,7 +22,7 @@ spec:
     {{- end }}
       containers:
       - name: {{ .Chart.Name }}
-        image: "{{ .Values.image.repository }}" ## :{{ .Values.image.tag }}
+        image: "{{ .Values.image.repository }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
           - name: http
@@ -42,17 +42,3 @@ spec:
 {{ toYaml .Values.globalEnvironments.environments | indent 8 }}
 {{- end }}
 
-        resources:
-          {{- toYaml .Values.resources | nindent 12 }}
-    {{- with .Values.nodeSelector }}
-    nodeSelector:
-      {{- toYaml . | nindent 8 }}
-    {{- end }}
-  {{- with .Values.affinity }}
-    affinity:
-      {{- toYaml . | nindent 8 }}
-  {{- end }}
-  {{- with .Values.tolerations }}
-    tolerations:
-      {{- toYaml . | nindent 8 }}
-  {{- end }}
