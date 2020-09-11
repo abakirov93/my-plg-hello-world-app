@@ -1,7 +1,0 @@
-credentials = "fuchicorp-service-account.json"   #"common-service-account.json"
-google_bucket_name = "beksul-fuchicorp-bucket"
-deployment_name = "common_tools"
-google_project_id = "atomic-segment-288118"
-google_domain_name = "bsalizhan.com"
-deployment_environment = "dev"
-deployment_image = "docker.bsalizhan.com/hello-world-app-dev-feature:26b6bf8"
