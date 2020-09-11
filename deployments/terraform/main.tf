@@ -1,4 +1,4 @@
-module "academy-deploy" {
+module "hello-world-deploy" {
   source  = "fuchicorp/chart/helm"
 
   deployment_name        = "hello-world"
