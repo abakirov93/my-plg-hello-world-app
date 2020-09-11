@@ -17,7 +17,7 @@ output "application_endpoint" {
 }
 
 variable  "deployment_image" {
-    default = "docker.fuchicorp.com/hello-world-app-dev-feature:4b7aacb"
+    default = "docker.bsalizhan.com/hello-world-app-dev-feature:26b6bf8"  # "docker.fuchicorp.com/hello-world-app-dev-feature:4b7aacb"
 }
 
 variable "deployment_environment" {
