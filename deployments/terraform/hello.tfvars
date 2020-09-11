@@ -1,4 +1,4 @@
-credentials = "common-service-account.json"
+credentials = "fuchicorp-service-account.json"   #"common-service-account.json"
 google_bucket_name = "beksul-fuchicorp-bucket"
 deployment_name = "common_tools"
 google_project_id = "atomic-segment-288118"
