@@ -1,5 +1,5 @@
 module "hello-world-deploy" {
-  source  = "fuchicorp/chart/helm"
+  source  = "example/project/chart/helm" #you have to specify your source location in this line
 
   deployment_name        = "hello-world"
   deployment_environment = "${var.deployment_environment}"
@@ -17,7 +17,7 @@ output "application_endpoint" {
 }
 
 variable  "deployment_image" {
-    default = "docker.bsalizhan.com/hello-world-app-dev-feature:26b6bf8"  # "docker.fuchicorp.com/hello-world-app-dev-feature:4b7aacb"
+    default = "docker.bsalizhan.com/hello-world-app-dev-feature:26b6bf8" 
 }
 
 variable "deployment_environment" {
